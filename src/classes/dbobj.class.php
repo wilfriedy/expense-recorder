@@ -25,6 +25,11 @@ class DbObj
             echo self::$database->error;
             exit('Database query failed');
         }
+        // for empty array
+        if($result->num_rows < 1 ){
+            exit('No record found');
+        }
+
         $result_obj = [];
         while($row = $result->fetch_assoc())
         {
@@ -44,7 +49,7 @@ class DbObj
     static public function instantiate($records)
     {
         $obj = new self;
-        // create new instance of the obj to have access to it properties and Assign the db values respectively
+        // create new instance of the obj to have access to its properties and Assign the db values respectively
         foreach($records as $property=>$value)
         {
             if(property_exists($obj , $property)){
@@ -52,6 +57,11 @@ class DbObj
             }
         }
         return $obj;
+    }
+
+    static public function getARecord($id){
+        $sql = "SELECT * FROM expensetable WHERE id = '". $id ." ' ";
+        return self::find_by_query($sql);
     }
 
 
