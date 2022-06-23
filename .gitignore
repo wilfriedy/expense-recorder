@@ -3,3 +3,5 @@ paths.vars.php
 db-credentials.php
 parsecsv
 db/
+src/styles/*.scss
+src/styles/*.css.map

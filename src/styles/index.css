@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-body {
+  padding: 100px 0px;
+}
+
+.inputs-details-container {
+  border: 1px solid red;
+}
+
+.input-labels-div {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=index.css.map */
