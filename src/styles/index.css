@@ -14,4 +14,8 @@
 .input-labels-div {
   display: flex;
   flex-direction: column;
+}
+
+.action-record-container {
+  border: 1px solid blue;
 }/*# sourceMappingURL=index.css.map */
