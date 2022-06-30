@@ -14,6 +14,11 @@
 .input-labels-div {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+
+.input-labels-div label {
+  margin: 10px 0;
 }
 
 .action-record-container {

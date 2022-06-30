@@ -12,9 +12,11 @@ $datas =  DbObj::getAll()
 ?>
 
 <html>
-    <body>
-        <?php foreach($datas as $data):  ?>
-            <p><?php echo $data->category ?></p>
-        <?php endforeach ?>
-    </body>
+
+<body>
+    <?php foreach ($datas as $data) :  ?>
+        <p><?php echo $data->category ?></p>
+    <?php endforeach ?>
+</body>
+
 </html>
